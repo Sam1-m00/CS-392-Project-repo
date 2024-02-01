@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+{% block titleB %}{% endblock %}
+{% block contentB %}
+<br><br>
+<div class="container">
+<ul>
+<h1>topics</h1>
+{% for post in object_list %}
+
+   <li> <a href="{% url 'discussion_Detail' post.pk %}"> {{ post.title }} </a>|| by {{ post.author }} <br>
+        {{ post.body }}</li> 
+
+{% endfor %}
+</ul>
+
+<br><br>
+
+<br><br>
+<table>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_table }}
+
+    <a class="btn btn-secondary" href="{% url 'add_post' %}">|&nbsp;&nbsp;Add post &nbsp;&nbsp;|</a>
+    
+
+<br><br><br></div>
+
+{% endblock %}

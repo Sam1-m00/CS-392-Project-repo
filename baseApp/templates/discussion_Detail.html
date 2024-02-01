@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+{% block titleB %}{{ post.title }}{% endblock %}
+{% block contentB %}
+<br><br>
+<h1>{{ post.title }}</h1>
+<small>by : {{ post.auth.first_name }}  {{ post.author.last_name }}</small>
+<br><hr><br>
+{{ post.body }}
+<br><br><br>
+
+<a class="btn btn-secondary" href="{% url 'add_post' %}">|&nbsp;&nbsp;Add new post &nbsp;&nbsp;|</a>
+{% endblock %}
