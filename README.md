@@ -1,1 +1,1 @@
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Sam1-m00_CS-392-Project-repo&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Sam1-m00_CS-392-Project-repo)
+sonarcloud : [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Sam1-m00_CS-392-Project-repo&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Sam1-m00_CS-392-Project-repo)
